@@ -1,0 +1,84 @@
+.section-left h1 {
+    font-size: 1em !important;
+}
+
+.section-left {
+    background-color: #3b3b3c !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.section-right {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img {
+    width: 50%;
+    position: inherit;
+    height: 90px;
+    margin: 30px;
+    border-radius: 100%;
+}
+
+.adres {
+    margin: 10px;
+    color: white;
+    background-color: #3b3b3c;
+    text-transform: capitalize;
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.ul-responsive {
+    display: contents;
+}
+
+.icons {
+    background-color: #3b3b3c;
+    font-size: 1.2em;
+}
+
+.liste {
+    font-size: 0.7em !important;
+    height: 50px;
+    width: 100%;
+    background-color: #3b3b3c;
+}
+
+.container {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* SAĞ TARAF */
+
+
+.section-right h1 {
+    background-color: white;
+    margin: 50px 5px 0 10px;
+    
+ 
+    font-weight: 900;
+    font: 2.5em sans-serif !important;
+}
+
+.section-right h3 {
+    background-color: white;
+    
+    font-weight: 400 !important;
+    margin: 0 85px 0 10px;
+    text-transform: uppercase;
+    font: 1.2em sans-serif;
+
+
+}
