@@ -58,7 +58,7 @@
           />
           <b-form-spinbutton
             class="textbox"
-            style="background: grey !important"
+         
             v-model="field.value"
             min="0"
             v-on:blur="show = false"

@@ -1,5 +1,22 @@
+.genel-content {
+    width: 90% !important;
+    margin: 30px auto !important;
+ 
+
+
+}
+
 .section-left h1 {
     font-size: 1em !important;
+}
+
+
+.section-left {
+    width: 40%;
+}
+
+.section-right {
+    width: 80%;
 }
 
 .img {
@@ -10,26 +27,7 @@
     border-radius: 100%;
 }
 
-.adres {
-    margin: 10px;
-    color: white;
-    background-color: #3b3b3c;
-    text-transform: capitalize;
-    width: 100%;
-    height: 50px;
-    overflow: auto;
-    word-wrap: break-word;
-    white-space: pre-wrap;
 
-
-
-}
-
-.ul-responsive {
-    display: contents;
-
-
-}
 
 .icons {
     margin: 5px;
@@ -39,14 +37,23 @@
 
 .liste {
     font-size: 0.8em !important;
-    height: 50px;
-    width: 100%;
-    background-color: #3b3b3c;
+    height: 80px;
+
+
 }
 
-.container {
-    width: 70% !important;
-    display: flex;
-    justify-content: flex-start;
-    min-height: 130vh
+.section-right h1 {
+    background-color: white;
+    margin: 50px 5px 0 10px;
+    font: 2.5em sans-serif;
+
+
+}
+
+.section-right h3 {
+    background-color: white;
+    margin: 0 85px 10px 10px;
+    text-transform: uppercase;
+    font: 1.1em;
+
 }

@@ -7,92 +7,116 @@
       <i class="fa fa-briefcase icons" aria-hidden="true"></i>
       <h1>Experience</h1>
     </div>
-    <hr style="width: 80%; color: black" />
+    <hr style="width: 80%; general-column or: black" />
 
-    <div v-for="ex in experience" :key="ex.id" class="container">
-      <div class="col">
-        <p contenteditable spellcheck="none" @click="ex.date = ''">
-          {{ ex.date }}
-        </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
-          {{ ex.company }}
-        </p>
+    <div v-for="ex in experience" :key="ex.id" class="genel-content ">
+      <div class="general-column ">
+        <p
+          v-text="ex.date"
+          contenteditable
+          spellcheck="none"
+          @click="ex.date = ''"
+        ></p>
+        <p
+          v-text="ex.company"
+          contenteditable
+          spellcheck="none"
+          @click="ex.company = ''"
+        ></p>
       </div>
-      <div class="col">
-        <p contenteditable spellcheck="none" @click="ex.title = ''">
-          {{ ex.title }}
-        </p>
-        <p contenteditable spellcheck="none" @click="ex.description = ''">
-          {{ ex.description }}
-        </p>
+      <div class="general-column ">
+        <p
+          v-text="ex.title"
+          contenteditable
+          spellcheck="none"
+          @click="ex.title = ''"
+        ></p>
+        <p
+          v-text="ex.description"
+          contenteditable
+          spellcheck="none"
+          @click="ex.description = ''"
+        ></p>
       </div>
     </div>
 
     <button style="margin: 5px" class="btn" @click="field('experience')">
-      <i class="fa fa-plus" style="color: black" aria-hidden="true"></i>
+      <i class="fa fa-plus" style="general-column or: black" aria-hidden="true"></i>
     </button>
 
     <div class="baslik">
       <i class="fas fa-school icons" aria-hidden="true"></i>
       <h1>Education</h1>
     </div>
-    <hr style="width: 80%; color: black" />
+    <hr style="width: 80%; general-column or: black" />
 
-    <div v-for="ex in education" :key="ex.id" class="container">
-      <div class="col">
-        <p contenteditable spellcheck="none" @click="ex.date = ''">
-          {{ ex.date }}
-        </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
-          {{ ex.company }}
-        </p>
+    <div v-for="ex in education" :key="ex.id" class="genel-content ">
+      <div class="general-column ">
+        <p
+          v-text="ex.date"
+          contenteditable
+          spellcheck="none"
+          @click="ex.date = ''"
+        ></p>
+        <p
+          v-text="ex.company"
+          contenteditable
+          spellcheck="none"
+          @click="ex.company = ''"
+        ></p>
       </div>
-      <div class="col">
-        <p contenteditable spellcheck="none" @click="ex.title = ''">
-          {{ ex.title }}
-        </p>
-        <p contenteditable spellcheck="none" @click="ex.description = ''">
-          {{ ex.description }}
-        </p>
+      <div class="general-column ">
+        <p
+          v-text="ex.title"
+          contenteditable
+          spellcheck="none"
+          @click="ex.title = ''"
+        ></p>
+        <p
+          v-text="ex.description"
+          contenteditable
+          spellcheck="none"
+          @click="ex.description = ''"
+        ></p>
       </div>
     </div>
 
     <button style="margin: 5px" class="btn" @click="field('education')">
-      <i class="fa fa-plus" style="color: black" aria-hidden="true"></i>
+      <i class="fa fa-plus" style="general-column or: black" aria-hidden="true"></i>
     </button>
 
     <div class="baslik">
       <i class="fas fa-pen-alt icons" aria-hidden="true"></i>
       <h1>References</h1>
     </div>
-    <hr style="width: 80%; color: black" />
+    <hr style="width: 80%; general-column or: black" />
 
-    <div v-for="ex in references" :key="ex.id" class="container">
-      <div class="col">
-        <p contenteditable spellcheck="none" @click="ex.date = ''">
-          {{ ex.date }}
+    <div v-for="ex in references" :key="ex.id" class="genel-content ">
+      <div class="general-column ">
+        <p v-text="ex.date" contenteditable spellcheck="none" @click="ex.date = ''">
+       
         </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
+        <p v-text="ex.company" contenteditable spellcheck="none" @click="ex.company = ''">
           {{ ex.company }}
         </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
+        <p v-text="ex.company" contenteditable spellcheck="none" @click="ex.company = ''">
           {{ ex.company }}
         </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
+        <p v-text="ex.company" contenteditable spellcheck="none" @click="ex.company = ''">
           {{ ex.company }}
         </p>
       </div>
-      <div class="col">
-        <p contenteditable spellcheck="none" @click="ex.date = ''">
+      <div class="general-column ">
+        <p v-text="ex.date" contenteditable spellcheck="none" @click="ex.date = ''">
           {{ ex.date }}
         </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
+        <p v-text="ex.company" contenteditable spellcheck="none" @click="ex.company = ''">
           {{ ex.company }}
         </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
+        <p v-text="ex.company" contenteditable spellcheck="none" @click="ex.company = ''">
           {{ ex.company }}
         </p>
-        <p contenteditable spellcheck="none" @click="ex.company = ''">
+        <p v-text="ex.company" contenteditable spellcheck="none" @click="ex.company = ''">
           {{ ex.company }}
         </p>
       </div>
@@ -142,6 +166,10 @@ export default {
   },
 
   methods: {
+    look() {
+      console.log(this.education);
+    },
+
     field(data) {
       if (data === "experience") {
         if (this.experience.length > 2) {

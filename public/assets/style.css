@@ -1,14 +1,16 @@
 /* GENEL */
 
-.container {
-    width: 75% !important;
+.genel-content {
+    width: 70% !important;
     margin: 30px auto !important;
+    justify-content: center;
     display: flex;
-    justify-content: flex-start;
+
 
 }
-.btn{
-    
+
+.btn {
+
     box-shadow: none !important;
     background: transparent !important;
 }
@@ -19,14 +21,14 @@
     flex-direction: column;
     align-items: center;
     border-radius: 5px !important;
-    width: 50%;
+    width: 30%;
 
 
 }
 
 .section-right {
     background-color: white;
-    width: 100%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     border-radius: 5px !important;
@@ -83,7 +85,7 @@ li {
     align-items: center;
     color: white;
     background-color: #3b3b3c;
-   
+
     width: 100%;
     word-wrap: break-word;
 
@@ -116,7 +118,7 @@ li {
     position: inherit;
     height: 150px;
     margin: 30px;
-    background-color: red;
+
     border-radius: 100%;
 }
 
@@ -130,8 +132,16 @@ li {
     max-width: 50%;
 }
 
+.img:hover{
+
+    cursor: pointer;
+    opacity: 0.5;
+
+}
 .img:hover+.image-fill {
     display: block;
+    color: white;
+    font-size: 1.2em;
 }
 
 .textbox {
@@ -144,8 +154,7 @@ li {
 }
 
 .liste {
-    font-size: 0.8em !important;
-
+    font-size: 1em !important;
 }
 
 /* SAĞ TARAF */
@@ -158,7 +167,7 @@ li {
 
 .section-right>.container {
     width: 100% !important;
-    height: 7%;
+
     display: flex;
     justify-content: flex-start;
     min-height: auto;
@@ -166,12 +175,11 @@ li {
 
 }
 
-.col {
+.general-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    margin: 9px;
+    width: 90% !important;
 
 }
 
@@ -198,16 +206,11 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-   
+
 }
 
 .section-right div h1 {
     margin: 0;
     text-transform: uppercase;
     font: 1.5em 'Roboto', sans-serif;
-}
-
-.section-right p {
-    width: 300px;
-
 }

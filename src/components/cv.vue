@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="genel-content ">
     <sectionLeft />
     <sectionRight />
   </div>
